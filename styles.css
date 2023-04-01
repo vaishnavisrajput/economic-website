@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Courgette', cursive;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Bree Serif', serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    z-index: 1000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+    
+}
+.head{
+    color: #AA5656;
+    font-size: 3rem;
+    font-family: 'Courgette', cursive;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    color: #434242;
+    padding: 15px 25px;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all .42s ease;
+    font-family: 'Courgette', cursive;
+}
+.navbar a:hover{
+    color: #EA5455;
+}
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+.nav-icon i{
+    margin-right: 20px;
+    color: #332C39;
+    font-size: 1.3rem;
+    font-weight: 400;
+    transition: all .42s ease;
+}
+.nav-icon i:hover{
+    transform: scale(1.1);
+    color: #EA5455;
+}
+#menu-icon{
+    font-size: 1.7rem;
+    color: #332C39;
+    z-index: 1001;
+    cursor: pointer;
+}
+.main-text{
+    position: absolute;
+    top: 50%;
+    right: 4%;
+}
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: url("webimage.avif");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+.main-text h3{
+    color: #AA5656;
+    font-size: 1.8rem;
+    font-weight: 800;
+   /* font-family: 'Bree Serif', serif;*/
+    
+}
+.main-text p{
+    color: #434242;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 6px 0 10px;
+    font-style: italic;
+   /* font-family: 'Bree Serif', serif;*/
+}
+.btn{
+    display: inline-block;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    border: 2px solid black;
+    padding: 10px 20px;
+    transition: all .42s ease;
+    /*font-family: 'Bree Serif', serif;*/
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+.btn i{
+    vertical-align: middle;
+}
+.down-arrow{
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+}
+.down i{
+    font-size: 2rem;
+    color: #434242;
+    border: 2px solid #434242;
+    border-radius: 100%;
+    padding: 5px 5px;
+}
+.down i:hover{
+    background-color: #434242;
+    color: white;
+    transition: all .42s ease;
+}
+header.sticky{
+    background: #ffff;
+    padding: 5px 5%;
+    box-shadow: 0px 0px 10px rgb(0 0 0 /10%);
+}
+/*trending-section-css*/
+
+.center-text h2{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.center-text span{
+    color: #AA5656;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.row{
+    position: relative;
+    transition: all .40s;
+}
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+}
+.row img:hover{
+    transform: scale(0.9);
+}
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 10px;
+    background-color:#8D7B68;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+.heart-icon{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+}
+.heart-icon:hover{
+    color: red;
+}
+.rating i{
+    color: #F7C04A;
+    font-size: 1rem;
+
+}
+.price h4{
+    color: black;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 3px;
+}
+.price p{
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 3px;
+}
+.client-review{
+    text-align: center;
+    background-color: #F0EEED;
+    margin-top: 50px;
+}
+
+.reviews h2{
+    color: black;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.reviews img{
+    height: auto;
+    width: 100px;
+    border-radius: 100%;
+    margin: 10px 0;
+    
+}
+.reviews p{
+    color: #8B7E74;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 8px;
+    margin-right: 80px;
+    margin-left: 80px;
+}
+.reviews h3{
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+/*update section*/
+.update-center-text h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+.cart img{
+    height: auto;
+    width: 350px;
+    text-align: center;
+    border-radius: 20px;
+    transition: all .40s;
+}
+.cart img:hover{
+    transform: scale(0.9);
+}
+.update-cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 2rem;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.cart h5{
+    color: #8B7E74;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.cart h3{
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.cart p{
+    margin-top: 2px;
+    color: #8B7E74;
+    font-size: 0.8rem;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.cart h6{
+    color: #8B7E74;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.cart h6:hover{
+    transition: all .40s ease;
+    color: black;
+}
+.first-info h1{
+    color: #AA5656;
+    font-size: 3rem;
+    font-family: 'Courgette', cursive;
+}
+.contact{
+    background-color: #e2dccf;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+    gap: 1rem;
+    margin-left: 100px;
+    margin-top: 50px;
+    
+}
+.contact-info h4{
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.contact-info p{
+    color:#6b5b4b;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all .40s ;
+}
+.contact-info p:hover{
+    color: #EA5455;
+}
+.social-icon i{
+    color:#6b5b4b;
+    margin-right: 8px;
+    font-size: 1.2rem;
+    transition: all .40s;
+}
+.social-icon i:hover{
+    transform: scale(1.3);
+}
+.end-text{
+    background-color: #e2dccf;
+    text-align: center;
+    padding: 20px;
+}
+.end-text p{
+    color: #434242;
+    font-size: 0.9rem;
+}
